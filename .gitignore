@@ -18,6 +18,7 @@ dist/
 build
 
 # misc
+.env
 .DS_Store
 *.pem
 
