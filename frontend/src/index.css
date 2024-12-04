@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 
 html {
@@ -442,3 +442,24 @@ i {
    justify-content: center;
    width: 100%;
 }
+
+@layer components {
+   .custom scrollbar::-webkit-scrollbar {
+      width: 4px; 
+   }
+
+   .custom-scrollbar::-webkit-scrollbar-track {
+       background: transparent; 
+   }
+
+   .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #a5b4fc; 
+      width: 5px; 
+      border-radius: 10px; 
+   }
+
+   .custom-scrollbar-dark::-webkit-scrollbar-thumb {
+      background-color: #312e81; 
+   }
+}
+   
